@@ -111,6 +111,31 @@ export function CodeSlide() {
         </Tabs>
       </SlideContent>
 
+      <SlideContent delay={0.4}>
+        <div className="mt-8 mb-4">
+          <div className="flex flex-col items-center">
+            <h3 className="text-xl font-semibold mb-2 text-center text-primary">Demonstração Visual</h3>
+            <p className="text-sm text-muted-foreground text-center mb-6 max-w-3xl">
+              Abaixo, observamos o funcionamento prático de cada modelo. A animação do <strong>modelo centralizado</strong> demonstra a solução guiada pelo cálculo do campo potencial de difusão de calor (HEDAC), enquanto a <strong>descentralizada</strong> exibe os agentes explorando de forma autônoma baseada na dispersão de feromônios (Estigmergia).
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="glass p-4 rounded-xl flex flex-col items-center cursor-pointer group transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
+              <h4 className="font-medium mb-3 text-white/90 group-hover:text-primary transition-colors">Sistema Centralizado (HEDAC)</h4>
+              <div className="relative w-full aspect-square md:aspect-video rounded-lg overflow-hidden bg-background">
+                <img src="/images/animacao_centralizada.gif" alt="Animação Centralizada" className="w-full h-full object-contain" />
+              </div>
+            </div>
+            <div className="glass p-4 rounded-xl flex flex-col items-center cursor-pointer group transition-all duration-300 hover:shadow-lg hover:shadow-accent/20">
+              <h4 className="font-medium mb-3 text-white/90 group-hover:text-accent transition-colors">Sistema Descentralizado (Estigmergia)</h4>
+              <div className="relative w-full aspect-square md:aspect-video rounded-lg overflow-hidden bg-background">
+                <img src="/images/animacao_descentralizada.gif" alt="Animação Descentralizada" className="w-full h-full object-contain" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </SlideContent>
+
       {/* Presenter badge */}
       <SlideContent delay={0.5}>
         <div className="mt-8 flex justify-center">
