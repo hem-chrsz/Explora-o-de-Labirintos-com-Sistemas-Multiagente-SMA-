@@ -21,9 +21,9 @@ const chartImages = [
     caption: "Gráfico 3 (40x40 com 10 agentes)"
   },
   {
-    src: "/images/g4.jpeg",
-    alt: "Gráfico 4 - 40x40 com 10 agentes",
-    caption: "Gráfico 4 (40x40 com 10 agentes)"
+    src: "/images/grafico8.webp",
+    alt: "Consumo de Recursos Médio (15 Execuções)",
+    caption: "Consumo de Recursos Médio (15 Execuções)"
   },
 ]
 
